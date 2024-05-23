@@ -1,77 +1,110 @@
-<!--
-	Name: Hamza Mansuri
-	File: assignment 1 part 2
-	Date: 21 05 2024
-	In this HTML code i am going to create the website that is going to create a website on which we can see different type of space related photos like as we want to see them
-    
-	-->
-    <html>
+<!DOCTYPE html>
+<html>
   <head>
-    <title>Bird  images</title>
+    <title>Bird Site</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
         font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
       }
-      .container {
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-      }
+
       header {
-        background-color: #000000;
-        color: white;
-        padding: 10px;
-        text-align: center;
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
       }
+
+      header h1 {
+        margin: 0;
+      }
+
       nav {
-        background-color: #336699;
-        color: white;
-        padding: 10px;
-        text-align: center;
+        background-color: #eee;
+        padding: 1rem;
       }
-      nav a {
-        color: white;
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
         text-decoration: none;
-        padding: 5px;
       }
-      nav a:hover {
-        background-color: #4477aa;
+
+      nav ul li a:hover {
+        background-color: #333;
+        color: #fff;
       }
+
       main {
-        padding: 20px;
+        padding: 2rem;
       }
-      h1 {
+
+      main h2 {
+        margin-top: 0;
+      }
+
+      main p {
+        margin-bottom: 1rem;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
         text-align: center;
       }
-      img {
-        width: 100%;
-        height: auto;
+
+      footer p {
+        margin: 0;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Welcome to Space Media </h1>
-      </header>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Get Started</a>
-        <a href="#">Photos</a>
-        <a href="#">Gear</a>
-        <a href="#">Forum</a>
-      </nav>
-      <main>
-        <h2>Welcome to space media</h2>
-        <p>On this site your gonna get the chance to watch the space and learn something new about this universe, so lets begin</p>
-        <p>So don't waste time! Get what you need, then turn off that computer and get out into the great books about the space!</p>
-        <h2>Favourite Photos</h2>
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fbird%2F&psig=AOvVaw1i701E4JTijM8TwLPI7IWF&ust=1716566206041000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKjvzM-RpIYDFQAAAAAdAAAAABAQ" alt="Number 1">
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dbird&psig=AOvVaw1i701E4JTijM8TwLPI7IWF&ust=1716566206041000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKjvzM-RpIYDFQAAAAAdAAAAABAX" alt="Number 2">
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.birdsandblooms.com%2Fbirding%2Fbird-photography%2Fbest-spring-bird-photos-ever%2F&psig=AOvVaw1i701E4JTijM8TwLPI7IWF&ust=1716566206041000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKjvzM-RpIYDFQAAAAAdAAAAABAf" alt="Number 3">
-        <img src="https://www.istockphoto.com/photo/bird-climbing-gm1475266434-504819219?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_sponsored&utm_content=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fbird%2F&utm_term=bird" alt="Number 4">
-        <img src="https://pixabay.com/photos/zoo-parrot-bird-animal-nature-8378189/" alt="Number 5">
-      </main>
-    </div>
+    <header>
+      <h1>Bird Site</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Get Started</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">Gear</a></li>
+        <li><a href="#">Forum</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Welcome to our birdwatching site</h2>
+      <p>
+        Here you can watch different type of the birds, so you can learn somethign about them.
+      </p>
+      <p>
+        So don't waste time! Get what you need
+      </p>
+      <h2>Favourite Photos</h2>
+      <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmlyZHxlbnwwfHwwfHx8MA%3D%3D" alt="Number 1 " />
+      <img src="https://images.unsplash.com/photo-1551085254-e96b210db58a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmlyZHxlbnwwfHwwfHx8MA%3D%3D" alt="Number 2 " />
+      <img src="https://images.unsplash.com/photo-1606567595334-d39972c85dbe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D" alt="Number 3 " />
+      <img src="https://images.unsplash.com/photo-1539664030485-a936c7d29c6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D" alt="Number 4" />
+      </p>
+    </main>
+
+    <footer>
+      <p>Copyright © 2022 Birdwatching Site</p>
+    </footer>
   </body>
 </html>
