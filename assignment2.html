@@ -5,7 +5,7 @@
 	Date: 30 may 2024
  creating a website for mozilla splash page.
 	-->
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
@@ -106,14 +106,13 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
+      <a href="FIREFOX/firefox_logo-only_RGB4120.jpg"><img src="FIREFOX/firefox_logo-only_RGB4120.jpg" alt="Monzillass logo"></a>
 
     </header>
 
     <main>
       <article>
-        <!-- insert iframe from youtube -->
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg?si=ZUYrCSq-1bcYliKW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         <h2>Rocking the free web</h2>
 
@@ -124,24 +123,45 @@
 
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
-        <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
-        </a>
-        <a href="https://www.mozilla.org/">
-          <img>
-        </a>
-        <a href="https://addons.mozilla.org/">
-          <img>
-        </a>
-        <a href="https://developer.mozilla.org/en-US/">
-          <img>
-        </a>
-        <div class="clearfix"></div>
-      </div>
+        <div class="further-info">
+          <a href="https://www.mozilla.org/en-US/firefox/new/">
+            <img src="FIREFOX/firefox_logo-only_RGB.jpg"
+                 srcset="FIREFOX/firefox_logo-only_RGB120.jpg 120w, FIREFOX/firefox_logo-only_RGB400.jpg 400w"
+                 sizes="(max-width: 500px) 120px, 400px"
+                 alt="Firefox New">
+          </a>
+      
+          <a href="https://www.mozilla.org/en-US/firefox/new/">
+            <img src="FIREFOX/mdh.jpg"
+                  srcset="FIREFOX/mdh120.jpg 120w, FIREFOX/mdh400.jpg 400w"
+                  sizes="(max-width: 500px) 120px, 400px"
+                 alt="Mozilla Dinosaur Head">
+          </a>
 
-      <div class="red-panda">
-        <!-- insert picture element -->
-      </div>
+         <a href="https://www.mozilla.org/en-US/firefox/new/">
+           <img src="FIREFOX/firefox-addons.jpg"
+                  srcset="FIREFOX/firefox-addons120.jpg 120w, FIREFOX/firefox-addons400.jpg 400w"
+                 sizes="(max-width: 500px) 120px, 400px"
+                 alt="Firefox Addons">
+          </a>
+
+          <a href="https://www.mozilla.org/en-US/firefox/new/">
+            <img src="FIREFOX/mdn.svg"
+                   srcset="FIREFOX/mdn.svg 120w, FIREFOX/mdn.svg 400w"
+                  sizes="(max-width: 500px) 120px, 400px"
+                  alt="Firefox Addons">
+           </a>
+
+          <a href="https://www.mozilla.org/en-US/firefox/new/">
+            <img src="FIREFOX/red-panda.jpg"
+                 srcset="FIREFOX/red-panda120.jpg 120w, FIREFOX/red-panda400.jpg 400w"
+                 sizes="(max-width: 500px) 120px, 400px"
+                 alt="Mozilla Developer">
+          </a>
+          <div class="clearfix"></div>
+        </div>
+        
+  </body>
 
     </main>
   </body>
