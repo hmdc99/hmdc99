@@ -7,73 +7,96 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Formatting a biography</title>
-    <style>
-      body {
-        background-color: #fff;
-        color: #333;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 1em;
-        margin: 0;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Formatting a biography</title>
+  <style>
+    /* CSS styles for the entire document */
+    body {
+      background-color: #fff;
+      color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 1em;
+      margin: 0;
+    }
 
-      h1 {
-        color: #375e97;
-        font-size: 2em;
-        font-family: Georgia, "Times New Roman", Times, serif;
-        border-bottom: 1px solid #375e97;
-      }
+    /* Styles for the main heading */
+    h1 {
+      color: hotpink; /* Title color changed to hotpink */
+      font-size: 2em;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      border-bottom: 10px dotted purple; /* Dotted border bottom in purple */
+    }
 
-      h2 {
-        font-size: 1.5em;
-      }
+    /* Styles for subheadings */
+    h2 {
+      font-size: 1.5em;
+      font-style: italic; /* Made italic */
+    }
 
-      .job-title {
-        color: #999999;
-        font-weight: bold;
-      }
+    /* Styles for job title */
+    .job-title {
+      color: #999999;
+      font-weight: bold;
+    }
 
-      a:link,
-      a:visited {
-        color: #fb6542;
-      }
+    /* Styles for links */
+    a:link,
+    a:visited {
+      color: #fb6542; /* Link color */
+    }
 
-      a:hover {
-        text-decoration: none;
-      }
-    </style>
-  </head>
+    /* Hover effect for links */
+    a:hover {
+      text-decoration: none; /* No underline on hover */
+      color: green; /* Link color changes to green on hover */
+    }
 
-  <body>
-    <h1>Jane Doe</h1>
-    <div class="job-title">Web Developer</div>
-    <p>
-      Far far away, behind the word mountains, far from the countries Vokalia
-      and Consonantia, there live the blind texts. Separated they live in
-      Bookmarksgrove right at the coast of the Semantics, a large language
-      ocean.
-    </p>
+    /* Styles for unordered list */
+    ul {
+      background-color: #eeeeee; /* Light gray background */
+      border: 5px solid purple; /* Purple border */
+      padding: 10px; /* Padding inside the border */
+    }
+  </style>
+</head>
 
-    <p>
-      A small river named Duden flows by their place and supplies it with the
-      necessary regelialia. It is a paradisematic country, in which roasted
-      parts of sentences fly into your mouth.
-    </p>
+<body>
+  <!-- Main heading -->
+  <h1>Jane Doe</h1>
 
-    <h2>Contact information</h2>
-    <ul>
-      <li>
-        Email:
-        <a href="mailto:jane@example.com">jane@example.com</a>
-      </li>
-      <li>
-        Web:
-        <a href="https://example.com">https://example.com</a>
-      </li>
-      <li>Tel: 123 45678</li>
-    </ul>
-  </body>
+  <!-- Job title -->
+  <div class="job-title">Web Developer</div>
+
+  <!-- Paragraphs with biography -->
+  <p>
+    Far far away, behind the word mountains, far from the countries Vokalia
+    and Consonantia, there live the blind texts. Separated they live in
+    Bookmarksgrove right at the coast of the Semantics, a large language
+    ocean.
+  </p>
+
+  <p>
+    A small river named Duden flows by their place and supplies it with the
+    necessary regelialia. It is a paradisematic country, in which roasted
+    parts of sentences fly into your mouth.
+  </p>
+
+  <!-- Subheading for contact information -->
+  <h2>Contact information</h2>
+
+  <!-- Unordered list for contact details -->
+  <ul>
+    <li>
+      Email:
+      <a href="mailto:jane@example.com">jane@example.com</a> <!-- Email link -->
+    </li>
+    <li>
+      Web:
+      <a href="https://example.com">https://example.com</a> <!-- Website link -->
+    </li>
+    <li>Tel: 123 45678</li> <!-- Telephone number -->
+  </ul>
+</body>
 </html>
