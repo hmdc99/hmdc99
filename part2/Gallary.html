@@ -4,19 +4,93 @@
 	Date: 29 july 2024
 	In this assingment i am going to create a website, which is going to act a picture gallary
 	-->
-    <h1>Image gallery example</h1>
-
-<div class="full-img">
-  <img
-    class="displayed-img"
-    src="images/pic1.jpg"
-    src="images/pic2.jpg"
-    src="images/pic3.jpg"
-    src="images/pic4.jpg"
-    src="images/pic5.jpg"
-    alt="Closeup of a blue human eye" />
-  <div class="overlay"></div>
-  <button class="dark">Darken</button>
-</div>
-
-<div class="thumb-bar"></div>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Image Gallery Example</title>
+    <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .displayed-img {
+      width: 600px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    .displayed-img:hover .overlay {
+      opacity: 1;
+    }
+    
+    .thumb-bar {
+      display: flex;
+      margin-top: 20px;
+    }
+    
+    .thumb-bar img {
+      width: 100px;
+      height: auto;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    
+    .dark {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #000;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+      <h1>Image gallery example</h1>
+      <div class="displayed-img" style="background-image: url('images/pic1.jpg');">
+        <div class="overlay"></div>
+        <button class="dark">Darken</button>
+      </div>
+      <div class="thumb-bar">
+        <img src="images/pic1.jpg" alt="Image 1" onclick="showImage('images/pic1.jpg')">
+        <img src="images/pic2.jpg" alt="Image 2" onclick="showImage('images/pic2.jpg')">
+        <img src="images/pic3.jpg" alt="Image 3" onclick="showImage('images/pic3.jpg')">
+        <img src="images/pic4.jpg" alt="Image 4" onclick="showImage('images/pic4.jpg')">
+        <img src="images/pic5.jpg" alt="Image 5" onclick="showImage('images/pic5.jpg')">
+      </div>
+    </div>
+    
+    <script>
+    function showImage(imageSrc) {
+      document.querySelector('.displayed-img').style.backgroundImage = 'url(' + imageSrc + ')';
+    }
+    </script>
+    </body>
+    </html>
